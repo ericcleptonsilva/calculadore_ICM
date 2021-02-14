@@ -1,3 +1,4 @@
+import 'package:calculadora_icm/home_componetes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,19 +19,25 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: Text(
           Textinfor01,
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.w300),
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
         backgroundColor: Colors.amber,
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.refresh),
+            icon: Icon(
+              Icons.refresh,
+              color: Colors.black,
+            ),
             onPressed: () {},
           )
         ],
       ),
+      backgroundColor: Colors.amber,
+      body: HomeComponetes(),
     );
   }
 }
