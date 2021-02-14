@@ -1,4 +1,4 @@
-# calculadora_icm
+# Calculadora ICM
 
 A new Flutter application.
 
